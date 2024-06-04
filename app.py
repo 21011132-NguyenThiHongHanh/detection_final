@@ -85,7 +85,7 @@ def predict(model, deepsort_model,img):
         image = np.expand_dims(image, 0)
 
         #image = torch.from_numpy(image)
-        image = torch.from_numpy(image)
+        image = torch.from_numpy(image).cuda()
 
         #print("shape tensor image:", image.shape)
           
